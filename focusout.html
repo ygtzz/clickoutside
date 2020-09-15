@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+        .menu{
+            position: absolute;
+            left: 100px;
+            top: 100px;
+            width: 200px;
+            height: 300px;
+            background-color: #fff;
+            border: 1px solid #ccc;
+            display: none;
+            outline: none;
+        }
+        .menu-item:active{
+            opacity: .7;
+        }
+    </style>
+    <script>
+        function onMenuClick(e){
+            console.log('menu click');
+            let menu = document.querySelector('.menu');
+            menu.style.display = 'block';
+            menu.focus();
+        }
+        function onMenuItemClick(){
+            console.log('menuItem click');
+        }
+        window.onload = function(){
+            //可以关闭菜单
+            document.querySelector('.menu').addEventListener('focusout',function(e){
+                //contains针对超链接，不加超链接不能跳转
+                if(!e.currentTarget.contains(e.relatedTarget)){
+                    document.querySelector('.menu').style.display = 'none';
+                }
+            });
+
+            //不能关闭菜单
+            // document.querySelector('.menu').addEventListener('blur',function(e){
+            //     if(!e.currentTarget.contains(e.relatedTarget)){
+            //         document.querySelector('.menu').style.display = 'none';
+            //     }
+            // });
+        }
+    </script>
+</head>
+<body>
+    <div>  
+        <button onclick="onMenuClick()">显示菜单</button>
+        <a href="./flower.jpg" download="./flower.jpg">下载文件</a> 
+        <div>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Deleniti aperiam, quo, possimus est laudantium doloremque corrupti sunt nam, iusto impedit consequuntur dignissimos ratione! Perferendis accusantium laudantium est veniam asperiores? Vitae.</div>
+        <div>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Sunt consequatur, quia totam doloribus asperiores aliquam quae soluta eum nostrum laudantium iste ratione culpa alias blanditiis aliquid neque omnis ullam voluptates.</div>
+        <div>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Sunt consequatur, quia totam doloribus asperiores aliquam quae soluta eum nostrum laudantium iste ratione culpa alias blanditiis aliquid neque omnis ullam voluptates.</div>
+        <div>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Sunt consequatur, quia totam doloribus asperiores aliquam quae soluta eum nostrum laudantium iste ratione culpa alias blanditiis aliquid neque omnis ullam voluptates.</div>
+        <div>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Sunt consequatur, quia totam doloribus asperiores aliquam quae soluta eum nostrum laudantium iste ratione culpa alias blanditiis aliquid neque omnis ullam voluptates.</div>
+        <div>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Sunt consequatur, quia totam doloribus asperiores aliquam quae soluta eum nostrum laudantium iste ratione culpa alias blanditiis aliquid neque omnis ullam voluptates.</div>
+        <div>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Sunt consequatur, quia totam doloribus asperiores aliquam quae soluta eum nostrum laudantium iste ratione culpa alias blanditiis aliquid neque omnis ullam voluptates.</div>
+        <div>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Sunt consequatur, quia totam doloribus asperiores aliquam quae soluta eum nostrum laudantium iste ratione culpa alias blanditiis aliquid neque omnis ullam voluptates.</div>
+        <div>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Sunt consequatur, quia totam doloribus asperiores aliquam quae soluta eum nostrum laudantium iste ratione culpa alias blanditiis aliquid neque omnis ullam voluptates.</div>
+        <div>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Sunt consequatur, quia totam doloribus asperiores aliquam quae soluta eum nostrum laudantium iste ratione culpa alias blanditiis aliquid neque omnis ullam voluptates.</div>
+        <div>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Sunt consequatur, quia totam doloribus asperiores aliquam quae soluta eum nostrum laudantium iste ratione culpa alias blanditiis aliquid neque omnis ullam voluptates.</div>
+        <div>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Sunt consequatur, quia totam doloribus asperiores aliquam quae soluta eum nostrum laudantium iste ratione culpa alias blanditiis aliquid neque omnis ullam voluptates.</div>
+        <div>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Sunt consequatur, quia totam doloribus asperiores aliquam quae soluta eum nostrum laudantium iste ratione culpa alias blanditiis aliquid neque omnis ullam voluptates.</div>
+        <div>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Sunt consequatur, quia totam doloribus asperiores aliquam quae soluta eum nostrum laudantium iste ratione culpa alias blanditiis aliquid neque omnis ullam voluptates.</div>
+        <div>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Sunt consequatur, quia totam doloribus asperiores aliquam quae soluta eum nostrum laudantium iste ratione culpa alias blanditiis aliquid neque omnis ullam voluptates.</div>
+        <div>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Sunt consequatur, quia totam doloribus asperiores aliquam quae soluta eum nostrum laudantium iste ratione culpa alias blanditiis aliquid neque omnis ullam voluptates.</div>
+        <div>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Sunt consequatur, quia totam doloribus asperiores aliquam quae soluta eum nostrum laudantium iste ratione culpa alias blanditiis aliquid neque omnis ullam voluptates.</div>
+        <div>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Sunt consequatur, quia totam doloribus asperiores aliquam quae soluta eum nostrum laudantium iste ratione culpa alias blanditiis aliquid neque omnis ullam voluptates.</div>
+        <div>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Sunt consequatur, quia totam doloribus asperiores aliquam quae soluta eum nostrum laudantium iste ratione culpa alias blanditiis aliquid neque omnis ullam voluptates.</div>
+        <div>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Sunt consequatur, quia totam doloribus asperiores aliquam quae soluta eum nostrum laudantium iste ratione culpa alias blanditiis aliquid neque omnis ullam voluptates.</div>
+        <div>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Sunt consequatur, quia totam doloribus asperiores aliquam quae soluta eum nostrum laudantium iste ratione culpa alias blanditiis aliquid neque omnis ullam voluptates.</div>
+        <div>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Sunt consequatur, quia totam doloribus asperiores aliquam quae soluta eum nostrum laudantium iste ratione culpa alias blanditiis aliquid neque omnis ullam voluptates.</div>
+        <div>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Sunt consequatur, quia totam doloribus asperiores aliquam quae soluta eum nostrum laudantium iste ratione culpa alias blanditiis aliquid neque omnis ullam voluptates.</div>
+        <div>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Sunt consequatur, quia totam doloribus asperiores aliquam quae soluta eum nostrum laudantium iste ratione culpa alias blanditiis aliquid neque omnis ullam voluptates.</div>
+        <div>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Sunt consequatur, quia totam doloribus asperiores aliquam quae soluta eum nostrum laudantium iste ratione culpa alias blanditiis aliquid neque omnis ullam voluptates.</div>
+        <div>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Sunt consequatur, quia totam doloribus asperiores aliquam quae soluta eum nostrum laudantium iste ratione culpa alias blanditiis aliquid neque omnis ullam voluptates.</div>
+        <div>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Sunt consequatur, quia totam doloribus asperiores aliquam quae soluta eum nostrum laudantium iste ratione culpa alias blanditiis aliquid neque omnis ullam voluptates.</div>
+        <div>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Sunt consequatur, quia totam doloribus asperiores aliquam quae soluta eum nostrum laudantium iste ratione culpa alias blanditiis aliquid neque omnis ullam voluptates.</div>
+        <div>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Sunt consequatur, quia totam doloribus asperiores aliquam quae soluta eum nostrum laudantium iste ratione culpa alias blanditiis aliquid neque omnis ullam voluptates.</div>
+        <div>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Sunt consequatur, quia totam doloribus asperiores aliquam quae soluta eum nostrum laudantium iste ratione culpa alias blanditiis aliquid neque omnis ullam voluptates.</div>
+        <div>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Sunt consequatur, quia totam doloribus asperiores aliquam quae soluta eum nostrum laudantium iste ratione culpa alias blanditiis aliquid neque omnis ullam voluptates.</div>
+        <div>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Sunt consequatur, quia totam doloribus asperiores aliquam quae soluta eum nostrum laudantium iste ratione culpa alias blanditiis aliquid neque omnis ullam voluptates.</div>
+        <div>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Sunt consequatur, quia totam doloribus asperiores aliquam quae soluta eum nostrum laudantium iste ratione culpa alias blanditiis aliquid neque omnis ullam voluptates.</div>
+        <div>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Sunt consequatur, quia totam doloribus asperiores aliquam quae soluta eum nostrum laudantium iste ratione culpa alias blanditiis aliquid neque omnis ullam voluptates.</div>
+        <div>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Sunt consequatur, quia totam doloribus asperiores aliquam quae soluta eum nostrum laudantium iste ratione culpa alias blanditiis aliquid neque omnis ullam voluptates.</div>
+        <div>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Sunt consequatur, quia totam doloribus asperiores aliquam quae soluta eum nostrum laudantium iste ratione culpa alias blanditiis aliquid neque omnis ullam voluptates.</div>
+        <div>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Sunt consequatur, quia totam doloribus asperiores aliquam quae soluta eum nostrum laudantium iste ratione culpa alias blanditiis aliquid neque omnis ullam voluptates.</div>
+        <div>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Sunt consequatur, quia totam doloribus asperiores aliquam quae soluta eum nostrum laudantium iste ratione culpa alias blanditiis aliquid neque omnis ullam voluptates.</div>
+        <div>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Sunt consequatur, quia totam doloribus asperiores aliquam quae soluta eum nostrum laudantium iste ratione culpa alias blanditiis aliquid neque omnis ullam voluptates.</div>
+        <div>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Sunt consequatur, quia totam doloribus asperiores aliquam quae soluta eum nostrum laudantium iste ratione culpa alias blanditiis aliquid neque omnis ullam voluptates.</div>
+        <div>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Sunt consequatur, quia totam doloribus asperiores aliquam quae soluta eum nostrum laudantium iste ratione culpa alias blanditiis aliquid neque omnis ullam voluptates.</div>
+        <div>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Sunt consequatur, quia totam doloribus asperiores aliquam quae soluta eum nostrum laudantium iste ratione culpa alias blanditiis aliquid neque omnis ullam voluptates.</div>
+        <div>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Sunt consequatur, quia totam doloribus asperiores aliquam quae soluta eum nostrum laudantium iste ratione culpa alias blanditiis aliquid neque omnis ullam voluptates.</div>
+        <div>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Sunt consequatur, quia totam doloribus asperiores aliquam quae soluta eum nostrum laudantium iste ratione culpa alias blanditiis aliquid neque omnis ullam voluptates.</div>
+        <div>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Sunt consequatur, quia totam doloribus asperiores aliquam quae soluta eum nostrum laudantium iste ratione culpa alias blanditiis aliquid neque omnis ullam voluptates.</div>
+        <div>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Sunt consequatur, quia totam doloribus asperiores aliquam quae soluta eum nostrum laudantium iste ratione culpa alias blanditiis aliquid neque omnis ullam voluptates.</div>
+        <div class="menu" tabindex="0">
+            <ul>
+                <li><a target="_blank" href="https://wwww.baidu.com">百度</a></li>
+                <li><a target="_blank" href="https://www.bing.com">bing</a></li>
+                <li><a target="_blank" href="https://www.sougou.com">sougou</a></li>
+                <li><a target="_blank" href="https://www.360.cn">360</a></li>
+            </ul>
+            <a class="menu-item" onclick="onMenuItemClick()">fsaddfdfs</a>
+        </div>
+    </div>
+</body>
+</html>
